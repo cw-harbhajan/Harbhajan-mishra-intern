@@ -1,0 +1,45 @@
+React.js is js library.
+Why React!! Whole page reloads problem to facebook. Component Based Architecture
+Using React Whole website can be broken into different Chunks. Giving smooth updation.
+SPA- Single Page Application
+Pre-requisutes(JS) - Basics Functions objects variables Data types arrow function arrays what how map filter reduce for each object literals ES6 features destructuring asynchronous js promises fetch api async  await.
+Reactjs is a library. Library(customization in our hands) are used to give features Ex- GSAP ,LENIX->smooth scroll, ReactJS->UI
+Framework(inbuilt things are there)->Angular,NextJs,.net
+
+* type=module can use import,export
+Default export ->A module can have only ONE default export, import a from 
+named export -> import {a}  from 
+
+Real DOM vs Virtual DOM :
+JSX->HTML+JS
+
+npm create vite
+
+rafce-> extension simple react snippet 
+props-> parent se child ko data bhejte he.
+
+Local storage -> browser me data save karta he.
+string value should be given 
+localStorage.setItem("key","value")
+localStorage.getItem("key")
+localStorage.removeItem("key")
+localStorage.clear() -> pura clear karta he.
+json.parse() -> string to object
+json.stringify() -> object to string
+jspn.parse(localStorage.getItem("key"))
+localStorage.setItem("key",json.stringify(object))
+
+useEffect
+React ki rendering process ke side by side kaam krta he
+
+use of funtion. onclick onchange 
+
+Hooks-> useEffect side by side dusra function, useRef document.queryselector. 
+UseCOntext global context managekrne ka kaam krta he
+useMemo useCallback are used for optimization. 
+Dont directly interact with dom it will be done by React
+Use state is asyncronousily working.
+dont re render when same thing is going to be put there.
+
+For Handling  e.preventDefault
+2 way binding

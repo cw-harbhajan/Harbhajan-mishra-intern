@@ -1,0 +1,3 @@
+Js work in 2 parts: 1) Hoisting(memory allocation) 2) Execution
+functoin are fully hosted not funciton expression
+copying referense safely const obj ={...objn}

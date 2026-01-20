@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+ 
+</head>
+<body>
+  <main class="page">
+    <div
+        id="successMessage"
+        class="success"
+        hidden
+      >
+        <strong>Message Sent!</strong>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <form id="contactForm" novalidate>
+    <h1>Contact Us</h1>
+    
+    <div class="row">
+        <div class="field">
+          <label for="firstName">First Name <span>*</span></label>
+          <input id="firstName" name="firstName" placeholder="First Name" required />
+          <p class="error" id="firstNameError"></p>
+        </div>
+        
+
+        <div class="field">
+          <label for="lastName">Last Name <span>*</span></label>
+          <input id="lastName" name="lastName" placeholder="Last Name" />
+          <p class="error" id="lastNameError"></p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+        <input type="email" name="email" id="email" placeholder="Email Address" required />
+        <p class="error" id="emailError"></p>
+      </div>
+      
+  <fieldset class="field">
+  <legend>Query Type <span>*</span></legend>
+
+  <div class="radio-group">
+    <label>
+      <input type="radio" name="query" />
+      General Enquiry
+    </label>
+
+    <label>
+      <input type="radio" name="query" />
+      Support Request
+    </label>
+  </div>
+
+  <p class="error" id="queryError"></p>
+</fieldset>
+
+
+      <div class="field">
+        <label for="message">Message <span>*</span></label>
+        <textarea id="message" rows="5" required></textarea>
+        <p class="error" id="messageError"></p>
+      </div>
+      <label>
+        <input type="checkbox" id="consent" />
+        I consent to being contacted by the team <span>*</span>
+      </label>
+      <p class="error" id="consentError"></p>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </main>
+  
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
+<!--Contact Us
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon!

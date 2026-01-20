@@ -1,0 +1,1 @@
+component-> reusable functions. React UI almost all things are like component.
