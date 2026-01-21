@@ -5,6 +5,18 @@ export class Logger extends Component {
         super(props);
         console.log("Current Count:", this.props.count)
     }
+    componentDidUpdate(prevProps){
+        if(prevProps.count !== this.props.count){
+            console.log("Current Count:", this.props.count)
+        }
+    }
+    render(){
+        return (
+            <div>
+                <h2>Logger Component - Check Console for count value</h2>
+            </div>
+        )
+    }
   
 }
 
